@@ -4,5 +4,5 @@ const bot = new Discord.Client();
 var prefix = (".");
 var commands = new Object();
 var token = ('NDM0MDYzODI1Mjc3NTUwNTk0.Dc5ovA.D_h4D6cWg3nFAxllszB4iN8ZwX4');
-bot.on('ready', () => {
+
 	
