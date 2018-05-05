@@ -344,7 +344,7 @@ message.delete();
        
      if (message.content "Z!update") {
 	     message.channel.send("Information modération : L'anti insultes a été mis en maintenance jusqu'a un temps indeterminé.")
-       	
+     }
        });
   
   bot.login(token)
