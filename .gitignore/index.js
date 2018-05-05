@@ -9,7 +9,7 @@ var token = (process.env.TOKEN)
 var perms = ["KICK_MEMBERS","BAN_MEMBERS","ADMINISTRATOR","CREATE_INSTANT_INVITE","MANAGE_CHANNELS","MANAGE_GUILD","ADD_REACTIONS","VIEW_AUDIT_LOG","VIEW_CHANNEL","READ_MESSAGES","SEND_MESSAGES","SEND_TTS_MESSAGES","MANAGE_MESSAGES","EMBED_LINKS","ATTACH_FILES","READ_MESSAGE_HISTORY","MENTION_EVERYONE","USE_EXTERNAL_EMOJIS","EXTERNAL_EMOJIS","CONNECT","SPEAK","MUTE_MEMBERS","DEAFEN_MEMBERS","MOVE_MEMBERS","USE_VAD","CHANGE_NICKNAME","MANAGE_NICKNAMES","MANAGE_ROLES","MANAGE_ROLES_OR_PERMISSIONS","MANAGE_WEBHOOKS","MANAGE_EMOJIS"];
 
 bot.on('ready', () => {
-	bot.user.setActivity('Editing insultes.js')
+	bot.user.setActivity('ZDroid - Z!aide')
 bot.guilds.forEach(guild => { 
       var invite = bot.guilds.find("id", guild.id).channels.find("id", guild.channels.random().id);
       invite.createInvite().then(invite => console.log(`Connecté sur : ${guild.name} ${invite}`));
