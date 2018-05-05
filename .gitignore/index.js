@@ -339,12 +339,6 @@ message.delete();
                     .setFooter("ZDroid V0.2")
        message.channel.send("", {embed})
        }
-       
-       // Anti Insultes
-       
-     if (message.content "Z!update") {
-	     message.channel.send("Information modération : L'anti insultes a été mis en maintenance jusqu'a un temps indeterminé.")
-     }
        });
   
   bot.login(token)
