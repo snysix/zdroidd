@@ -342,49 +342,8 @@ message.delete();
        
        // Anti Insultes
        
-       if (message.content === "tg") {
-       	message.delete();
-       	}
-       	
-       	
-       		if (message.content === "tg") {
-       	message.reply("Votre message a été suprimé\nRaison : **Insultes**")
-       	}
-       	
-       	if (message.content === "fdp") {
-       	message.delete();
-       	}
-       	
-       	
-       		if (message.content === "fdp") {
-       	message.reply("Votre message a été suprimé\nRaison : **Insultes**")
-       	}
-       		
-       		if (message.content === "fd*") {
-       	message.delete();
-       	}
-       	
-       	
-       		if (message.content === "fd*") {
-       	message.reply("Votre message a été suprimé\nRaison : **Insultes**")
-       	}
-       	
-       	if (message.content === "f*p") {
-       	message.delete();
-       	}
-       	
-       	
-       		if (message.content === "f*p") {
-       	message.reply("Votre message a été suprimé\nRaison : **Insultes**")
-       	}
-       	
-       	if (message.content.starsWith("pd") {
-       	message.delete();
-       	});
-       	
-       	if (message.content.startsWith("pd")) {
-       	message.reply("Votre message a été suprimé\nRaison : **Insultes**")
-       	});
+     if (message.content "Z!update") {
+	     message.channel.send("Information modération : L'anti insultes a été mis en maintenance jusqu'a un temps indeterminé.")
        	
        });
   
