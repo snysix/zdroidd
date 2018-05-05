@@ -378,14 +378,13 @@ message.delete();
        	message.reply("Votre message a été suprimé\nRaison : **Insultes**")
        	}
        	
-       	if (message.content === "pd") {
+       	if (message.content.starsWith("pd") {
        	message.delete();
-       	}
+       	});
        	
-       	
-       		if (message.content === "pd") {
+       	if (message.content.startsWith("pd")) {
        	message.reply("Votre message a été suprimé\nRaison : **Insultes**")
-       	}
+       	});
        	
        });
   
