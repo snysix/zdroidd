@@ -70,6 +70,85 @@ bot.guilds.forEach(guild => {
 			
   });
   
+
+bot.on("message", message => {
+   	 	
+   	 	if (message.content === prefix + "support") {
+   	 		
+   	 		message.author.createDM().then(channel => {
+   	 			channel.send("📡 Votre demande de support a bien été prise en compte.");
+   	 			})
+   	 			bot.channels.get("442498631564525578").send("Support :\n L'utilisateur : **" + message.author.username + "** a fait une demande de support.");
+   	 	bot.channels.get("442498631564525578").send("📑 Journal d'activité :\n L'utilisateur : **" + message.author.username + "** a fait une demande de support.");
+   	 			
+   	 			}
+   	 			
+   	 			if(message.content === prefix + "sinfo") { 
+   	 				message.delete(); 
+   	 			
+   	 				 let serverembed = new Discord.RichEmbed()
+   	 				  .setTitle("Information sur le serveur")
+   	 				   .setColor("#320242")
+   	 				    .setThumbnail(sicon) 
+   	 				    .addField("Nom du serveur", message.guild.name) 
+   	 				    .addField("Créé le", message.guild.createdAt) 
+   	 				    .addField("Total des membres`", message.guild.memberCount)
+   	 				     .addField("ID du Serveur ", message.guild.id); 
+   	 				     return message.channel.send(serverembed).catch(console.error); 
+   	 				     }
+   	 				     
+   	 				     if (message.content === "tg") { 
+   	 				message.delete(); 
+   	 				let sicon = message.guild.iconURL;
+   	 				 let insultembed = new Discord.RichEmbed()
+   	 				   .setTitle("Insulte detéctée")
+   	 				   .setColor("#320242")
+   	 				    
+   	 				    .addField("Activité :", "• Insulte bloquée ") 
+   	 				    .addField("Utilisateur :", `• ${message.author.username}`)
+   	 				    .addField("Information :", "• Utilisateur non sanctionné")
+   	 				    	
+   	 				    	
+   	 				    	
+   	 				    	
+   	 				    
+   	 				     return message.channel.send(insultembed).catch(console.error); 
+   	 				     }
+   	 			 });
+  
+  
+    		
+  	
+  		 	bot.on('guildMemberAdd', function(member) {
+  		member.guild.channels.find("name", "zlog").message.channel.send("", {embed})
+  		
+  		
+  		 
+  		
+  	});
+  	
+  	// Logs
+  	
+  bot.on('messageReactionAdd', (reaction, user) => {
+  	if (reaction.emoji.name === "😭");
+  		bot.channels.get("442498631564525578").send("L'utilisateur " + message.author.username + " a mis la réaction " + reaction.emoji.name);
+  
+  	bot.channels.get("442498631564525578").send("L'utilisateur " + message.author.username + " a mis la réaction " + reaction.emoji.name);
+  	});
+  	
+  	bot.on('guildMemberAdd', function(member) {
+  		member.guild.channels.find("name", "zlog").sendMessage(" 📑 Journal d'activité :\n" + member.toString() + " a rejoint le serveur.")
+  	});
+  	
+
+  	
+  	
+  bot.on('guildMemberAdd', member => {
+  	member.createDM().then(channel => {
+  		return channel.send("📌 Bienvenue sur le serveur " + member.displayName + "\n\n**Aucune insultes seras acceptée.** ");
+  		}).catch(console.error);
+  		});
+
   // Catégorie - Divers (  Commandes) 
 		
 		 // Pierre Feuille Ciseau
